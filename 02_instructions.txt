@@ -1,0 +1,45 @@
+
+Ok, los geht's:
+
+Wir schreiben unser erstes Programm: Hello World.
+
+Erzeuge eine Datei mit dem Namen 'main.go' (so wird in der Regel die Datei mit
+der main Funktion genannt -- dies ist aber kein Muss).
+Am Anfang der Datei spezifieren wir das 'package', in unserem Falle _muss_
+dies
+
+package main
+
+sein, da wir eine ausführbare Datei erzeugen wollen (im Gegensatz zu einer
+Bibliothek).
+Implementiere die Funktionalität in einer Funktion (auch wenn es eigentlich
+unsinnig ist):
+
+func main() {
+   helloWorld()
+}
+
+func helloWorld() {
+  // ...
+}
+
+Das Program ist fast fertig: es fehlt noch ein 'import' Statement und die
+Ausgabe unseres Strings. Mache dich dazu mit der Dokumentation von go
+vertraut:
+
+https://golang.org/pkg/fmt/
+
+Um das Program auszuführen, rufe
+
+go run main.go
+
+auf -- dies kompiliert 'main.go' und führt das Kommando anschließend aus.
+
+Wenn du denkst dass du fertig bist, rufe wieder
+
+./next
+
+auf.
+
+
+
