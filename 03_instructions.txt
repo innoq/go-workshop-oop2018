@@ -1,0 +1,13 @@
+
+Wir wollen unseren ersten eigenen Typ kreieren: Er soll dazu dienen bei der
+Meta-Image-Suche eine kleine Statistik abzubilden. Der Name soll
+'Cnt' sein und er soll zusammengesetzt sein und zwei Properties enthalten:
+eine mit dem Namen 'Source' vom Typ 'string' und eine weitere mit dem Namen
+'Total' vom Typ 'int'.
+
+Erzeuge den Typen in einer neuen Datei mit dem Namen 'search.go'. Diese
+Datei gehört auch zu dem package 'main'.
+
+Weiter mit
+
+./next
