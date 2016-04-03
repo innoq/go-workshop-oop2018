@@ -1,0 +1,18 @@
+
+Schreibe die Methode 'String()' für den Typ 'Stats'. Sie soll pro Cnt-Eintrag einen String zurückgeben.
+Folgender Aufruf:
+
+println(
+  Stats{
+    Cnt{"bing", 20},
+    Cnt{"flickr", 100},
+  }.String()
+)
+
+soll folgenden Output produzieren:
+
+bing: 20
+flickr: 100
+
+
+
