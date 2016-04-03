@@ -1,0 +1,14 @@
+
+
+Wir bauen uns einen http-Server:
+
+Schreibe eine Funktion `startHTTPServer` die einen Argument namens `port` vom Type `int` hat
+und einen HTTP-Server startet, welcher den Dateibaum unter `./static` ausliefert.
+
+Diese Funktion soll am Ende der `main()` Funktion mit dem Port `4242` aufgerufen werden.
+
+  curl http://localhost:4242/index.html
+
+sollte ein HTML-Template zurückliefern
+
+Dokumentationen über HTTP Server und Client sind im Paket `net/http` zu finden.
