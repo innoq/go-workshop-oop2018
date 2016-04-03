@@ -1,0 +1,9 @@
+
+
+Wir wollen das Template unserer Webapp im Speicher cachen:
+
+Erzeuge in der Datei `main.go` eine globale Variable `indexTemplate` vom Type `*template.Template`
+
+Lese das template für unsere webapp via `init()` Funktion unter Benutzung von `NewTemplateFromFile`
+ein. Die Template Datei heißt `./static/index.html`. Speicher das Template in der globalen `indexTemplate`
+Variable.
