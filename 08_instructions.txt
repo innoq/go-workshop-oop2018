@@ -1,0 +1,24 @@
+
+
+Für unseren `Stats` Typen möchten wir eine Funktion namens `Inc` implementieren
+welche als Argument einen String-Parameter mit dem Namen `source` bekommt.
+
+Die Funktion soll jeweils die Property `Total` für die jeweilige `Source` erhöhen.
+
+Folgende Aufrufe
+
+
+	s := Stats{}
+
+	s.Inc("bing")
+	s.Inc("bing")
+	s.Inc("bing")
+	s.Inc("flickr")
+
+	fmt.Printf("%s", s)
+
+sollten folgendes Ausgeben:
+
+bing: 3
+flickr: 1
+
