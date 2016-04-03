@@ -1,0 +1,14 @@
+
+Wir wollen eine Datei einlesen (das html template für unsere Suchmachine):
+Erstelle eine Funktion mit der Signatur
+
+func NewTemplateFromFile(fileName string) (*template.Template, error)
+
+welche eine Datei mit dem namen `fileName` einliest und daraus ein Template erstellt.
+Sie soll einen Fehler zurückliefern falls ein Fehler bei dem einlesen der Datei
+oder bei dem Erstellen des Templates auftritt.
+
+Nützliche Doku:
+
+https://golang.org/pkg/io/ioutil/
+https://golang.org/pkg/text/template/

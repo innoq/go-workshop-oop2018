@@ -1,0 +1,131 @@
+h3 em {
+  text-decoration: underline;
+  font-family: inherit;
+}
+body {
+  margin:0px 0px 200px 0px;
+  padding: 0px;
+}
+.wrapper {
+  position: relative;
+  margin-left:auto;
+  margin-right:auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ungrouped-bookmarks{
+  display:none;
+}
+
+.navbar {
+  background-color:rgb(36,36,76) !important;
+}
+
+#favorites {
+  min-height: 160px;
+  border: 2px solid white;
+  padding: 50px 0px;
+}
+
+.wrapper-group.favorites {
+  padding: 20px 0px 50px 0px;
+}
+
+.dropzone-hint-favorites{
+  margin-top: 10px;
+  display:none;
+  font-family: MetaScWebNormal !important;
+}
+
+.dropzone-hint-ungrouped-bookmarks{
+  display:none;
+}
+
+.favorites-dropzone {
+  border: 2px dotted #e3e3e3 !important;
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.wrapper-group {
+  padding: 20px 0px 50px 0px;
+
+}
+
+.dashboard-list {
+  text-align: center;
+  margin:0px;
+  padding:5px;
+  max-width: 900px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.dashboard-list-item {
+  display: inline-block;
+  margin: 8px 5px 8px 5px;
+  vertical-align:top;
+  width: 200px;
+  height: 200px;
+  border: 2px solid;
+}
+
+.bing {
+  border:3px solid rgb(36,37,73) !important;
+}
+
+.flickr {
+  border:3px solid rgb(236,91,107) !important;
+}
+
+.shutterstock {
+  border:3px solid rgb(118,202,176) !important;
+}
+
+.navbar-default {
+  border-bottom: 0px;
+  box-shadow: none;
+}
+
+/*body > .container {
+  padding-top: 60px;
+}*/
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+
+
+li.removed-item {
+    animation: removed-item-animation .6s cubic-bezier(.55,-0.04,.91,.94) forwards;
+}
+
+@keyframes removed-item-animation {
+    from {
+        /*opacity: 1;*/
+        transform: scale(1);
+    }
+
+    to {
+        /*opacity: 0;*/
+        transform: scale(0);
+
+
+    }
+}

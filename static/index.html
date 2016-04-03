@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/stylesheets/innoq-bootstrap-theme.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="/stylesheets/color-icons.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="/stylesheets/dragula.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="/stylesheets/dashboard.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="/stylesheets/checkbox-toggle.css" media="screen" title="no title" charset="utf-8">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+</head>
+<body>
+  <div class="navbar navbar-default">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">
+          <img src="images/logo.svg" width="70px" title="innoQ Logo">
+        </a>
+      </div>
+      <div class="navbar-collapse navbar-inverse-collapse collapse navbar-right" aria-expanded="false" style="height: 1px;">
+        <ul class="nav navbar-nav ">
+          <li data-toggle="tooltip" data-placement="bottom" data-trigger="manual" title="Dashboard Links anzeigen oder verstecken" class="edit-mode-toggle-favorites">
+            <a href="javascript:document.location = document.location.href + '&format=json'"><i class="fa"></i> json</a>
+          </li>
+        </ul>
+      </div>
+  </div>
+
+<div class="container">
+  <div class="wrapper">
+    <div style="max-width: 580px; margin: 0 auto;">
+      <form class="form-horizontal" id="search-form" action="/" method="GET">
+        <input autocomplete="off" type="search" name="q" class="form-control search-onebox input-lg" id="search" placeholder="Wonach suchst du?">
+      </form>
+      <br/>
+      {{ if .Stats }}
+      <span>Image count: </span>
+      {{ range .Stats }}
+      <span style="border: 1px solid; display: inline-block; width: 25%" class="{{ .Source }}">{{ .Source }}: {{ .Total }}</span>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+
+  <div class="wrapper">
+    {{ if .Err }}
+      <div class="alert alert-dismissable alert-danger">
+        {{ .Err }} <button class="button" onclick="javascript:document.location = document.location.href + '&no-timeout=1'" style="color: black">Suche ohne timeout wiederholen</button>
+      </div>
+    {{ end }}
+    <div class="wrapper-group">
+      <ul class="dashboard-list" id="xxxxx">
+          {{ range .Images }}
+          <li class="dashboard-list-item {{ .Source }}">
+            <img style="max-width: 100%; max-height: 100%" src={{ .URL }}/>
+          </li>
+          {{ end }}
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>
