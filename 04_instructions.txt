@@ -1,0 +1,7 @@
+
+
+Kreiere einen neuen Typ namens 'Stats' der eine Array von dem eben erstellten Type 'Cnt' ist
+
+Weiter mit
+
+./next
