@@ -1,0 +1,28 @@
+
+Erstelle in der Datei `search.go` eine Funktion mit der Signatur
+
+func MetaImageSearch(q string, timeout time.Duration) ([]scraper.Image, Stats, error)
+
+Diese soll folgende Ergebnisse zurückliefern:
+
+- []scraper.Image : eine Liste von Bildern die verschiedene Suchmachinen zum Suchbegriff 'q' gefunden haben
+
+  -> siehe hierzu die Doku zum Scrapercode: http://bornkessel.com/scraper-docs.html
+
+  Das 'scraper' Paket wird mit
+
+    import "gitlab.innoq.com/daniel/go-workshop-utils/search/images/scraper"
+
+  importiert. Anschließend muss `go get` aufgerufen werden, um die Abhängigkeit zu laden.
+
+- Stats: Statistiken welche Suchmachine wieviel Bilder zurückgeliefert hat
+
+- error: Fehler-Objekt falls ein Fehler aufgetreten ist, nil sonst
+
+
+Es sollen alle drei Suchmachinen (bing, shutterstock und flickr (siehe scraper Doku)) gleichzeitig abgefragt werden. Wird
+das übergebene Timeout überschritten, soll sowohl ein Fehler als auch die bisher eingesammelten Bilder und Stats
+zurückgeliefert werden.
+
+
+
