@@ -7,4 +7,5 @@ Es soll dabei möglich sein, Angaben wie: '--timeout=0.1s' oder '--timeout=400ms
 
 Das Paket `flag` ist dein Freund.
 
+BITTE VOR AUSFÜHRUNG VON ./next DIE main() FUNKTION IN main.go LÖSCHEN
 
