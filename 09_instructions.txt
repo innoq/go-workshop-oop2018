@@ -1,0 +1,3 @@
+
+Fixe den Deadlock in der Funktion helloTony in der Datei helloTony.go.
+Nutze zur Lösung eine Go-Routine, nicht einen gepufferten Channel.
