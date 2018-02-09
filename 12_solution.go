@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"time"
 
-	"gitlab.innoq.com/daniel/go-workshop-utils/search/images/scraper"
+	"github.com/kesselborn/go-workshop-utils-oop2018/search/images/scraper"
 )
 
 func main() {
